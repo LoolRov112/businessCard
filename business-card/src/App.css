@@ -1,0 +1,78 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap");
+import use .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-expand-lg {
+  background-color: #fffffb;
+}
+
+.nav-link {
+  color: #322e18;
+  font-family: Roboto;
+}
+
+.btnHover {
+  color: #fffffb;
+  background-color: #5b5f97;
+}
+
+.card {
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+.card:hover {
+  transform: scale(1.15);
+  font-size: larger;
+  opacity: 1;
+}
+
+#deleteFavCard {
+  transition: transform 0.5s ease;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 100%;
+}
+
+#deleteFavCard:hover {
+  color: red;
+  transform: rotate(180deg) scale(1.2);
+  transform-origin: center;
+}
