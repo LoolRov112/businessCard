@@ -26,10 +26,8 @@ const UpdateCard: FunctionComponent<UpdateCardProps> = ({
     image: "",
   });
   useEffect(() => {
-    console.log(id);
     getSpesificCard(id)
       .then((res) => {
-        console.log(res);
         setCardData(res.data);
       })
       .catch((err) => console.log(err));
